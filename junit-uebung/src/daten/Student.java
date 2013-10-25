@@ -42,8 +42,6 @@ public class Student extends Person implements Comparable<Student> {
 	@Override
 	public int compareTo(Student o) {
 		int result = 0;
-
-		// TODO implement meaningful unit tests
 		if ((result = getLastName().compareTo(o.getLastName())) == 0) {
 			if ((result = getFirstName().compareTo(o.getFirstName())) == 0) {
 				result = getBirthDate().compareTo(o.getBirthDate());
